@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class AlphabeticalOrder {
     public  String alphabeticalOrder(String input) {
-
+        input = input.toLowerCase();
         String temp;
         String result;
         String str = "";
