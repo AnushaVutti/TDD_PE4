@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class MultipleOccurenceUsingMatcher {
-    public String multipleOccurenceUsingMatcher (String input, String pattern) {
+    public String countUsingMatcher (String input, String pattern) {
         Pattern patternCheck = Pattern.compile(pattern);
         Matcher matcher = patternCheck.matcher(input);
         String str ="";

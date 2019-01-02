@@ -10,19 +10,19 @@ public class TransposeOfStringTest {
     public void checkSuccess() {
         String input ="a quick brown fox jumps over the lazy dog";
         String result = "a kciuq nworb xof spmuj revo eht yzal god ";
-        assertEquals(result,transpose.transposeOfString(input));
+        assertEquals(result,transpose.transposeAString(input));
     }
     @Test
     public void checkFailure() {
         String input ="a quick brown fox jumps over the lazy dog";
         String result = "a kciuq nworb xof spmuj revo eht yzal good ";
-        assertNotSame(result,transpose.transposeOfString(input));
+        assertNotSame(result,transpose.transposeAString(input));
     }
     @Test
 
     public void checkNotNull() {
         String input ="a quick brown fox jumps over the lazy dog";
 
-        assertNotNull(transpose.transposeOfString(input));
+        assertNotNull(transpose.transposeAString(input));
     }
 }

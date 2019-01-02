@@ -1,7 +1,7 @@
 package com.stackroute.pe4;
 
 public class ReplaceChar {
-    public String replaceChar(String input, char[] ch) {
+    public String replaceCharacter(String input, char[] ch) {
         String intermediate;
         String result;
         intermediate = input.replace(ch[0],ch[1]);

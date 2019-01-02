@@ -9,17 +9,17 @@ public class PresenceOfStringTest {
     @Test
     public void checkSuccess() {
         String input = "This is Harry";
-        assertEquals(true,presence.presenceOfString(input));
+        assertEquals(true,presence.checkPresence(input));
     }
     @Test
     public void checkFailure() {
         String input = "This is Henry";
-        assertEquals(false,presence.presenceOfString(input));
+        assertEquals(false,presence.checkPresence(input));
     }
     @Test
     public void checkNotNull() {
         String input = "This is Henry";
-        assertNotNull(presence.presenceOfString(input));
+        assertNotNull(presence.checkPresence(input));
     }
 
 }

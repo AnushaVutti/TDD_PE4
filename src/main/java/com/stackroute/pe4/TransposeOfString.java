@@ -1,7 +1,7 @@
 package com.stackroute.pe4;
 
 public class TransposeOfString {
-    public String transposeOfString(String input) {
+    public String transposeAString(String input) {
         String revers="";
         String output="";
         StringBuffer sbf = new StringBuffer(input);

@@ -3,7 +3,7 @@ package com.stackroute.pe4;
 import java.util.Arrays;
 
 public class AlphabeticalOrder {
-    public  String alphabeticalOrder(String input) {
+    public  String alphabeticalOrderSort(String input) {
         input = input.toLowerCase();
         String temp;
         String result;

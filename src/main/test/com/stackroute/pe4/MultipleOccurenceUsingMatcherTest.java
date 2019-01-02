@@ -13,7 +13,7 @@ public class MultipleOccurenceUsingMatcherTest {
         String output = "Found at:4-6" +
                 "Found at:10-12" +
                 "Found at:27-29";
-        assertEquals(output,matcher.multipleOccurenceUsingMatcher(input,checkPattern));
+        assertEquals(output,matcher.countUsingMatcher(input,checkPattern));
     }
     @Test
     public void checkFailure() {
@@ -22,7 +22,7 @@ public class MultipleOccurenceUsingMatcherTest {
         String output = "Found at:4-6" +
                 "Found at:10-12" +
                 "Found:27-29";
-        assertNotSame(output,matcher.multipleOccurenceUsingMatcher(input,checkPattern));
+        assertNotSame(output,matcher.countUsingMatcher(input,checkPattern));
     }
     @Test
     public void checkNotNull() {
@@ -31,6 +31,6 @@ public class MultipleOccurenceUsingMatcherTest {
         String output = "Found at:4-6" +
                 "Found at:10-12" +
                 "Found at:27-29";
-        assertNotNull(matcher.multipleOccurenceUsingMatcher(input,checkPattern));
+        assertNotNull(matcher.countUsingMatcher(input,checkPattern));
     }
 }

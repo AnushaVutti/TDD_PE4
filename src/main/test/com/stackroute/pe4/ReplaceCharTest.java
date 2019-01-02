@@ -10,19 +10,19 @@ public class ReplaceCharTest {
     public void checkSuccess () {
         String original = "daily dry";
         char[] ch = {'d', 'f' ,'l', 't'};
-        assertEquals("faity fry",replace.replaceChar(original,ch));
+        assertEquals("faity fry",replace.replaceCharacter(original,ch));
     }
     @Test
     public void checkFailure () {
         String original = "daily dry";
         char[] ch = {'d', 'f' ,'l', 't'};
-        assertNotSame("faify fry",replace.replaceChar(original,ch));
+        assertNotSame("faify fry",replace.replaceCharacter(original,ch));
     }
     @Test
     public void checkNotNull () {
         String original = "daily dry";
         char[] ch = {'d', 'f' ,'l', 't'};
-        assertNotNull(replace.replaceChar(original,ch));
+        assertNotNull(replace.replaceCharacter(original,ch));
     }
 
 }
